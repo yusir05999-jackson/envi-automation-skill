@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# ENVI / IDL
+*.pro
+!scripts/example_pipeline.pro
+*.sav
+
+# 输出
+E:/work/
+work/
+*.dat
+*.hdr
+*.shp
+*.dbf
+*.shx
+
+# 编辑器
+.vscode/
+.idea/
+.DS_Store
