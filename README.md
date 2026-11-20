@@ -38,14 +38,14 @@
 
 ```bash
 git clone https://github.com/yusir05999-jackson/envi-automation-skill.git \
-  ~/.workbuddy/skills/envi-automation
+  ~/.workbuddy/skills/envi-automation-skill
 ```
 
 ### 方式二：手动
 
-下载后把整个 `envi-automation/` 目录放到你的 skills 目录下：
-- Claude Code: `~/.claude/skills/envi-automation/`
-- WorkBuddy: `~/.workbuddy/skills/envi-automation/`
+下载后把整个 `envi-automation-skill/` 目录放到你的 skills 目录下：
+- Claude Code: `~/.claude/skills/envi-automation-skill/`
+- WorkBuddy: `~/.workbuddy/skills/envi-automation-skill/`
 - Cursor: `.cursor/rules/`（取 `SKILL.md`）
 
 ---
@@ -113,12 +113,16 @@ snap(0, 0, 1600, 1000, r'E:\work\shot.png')   # → 3200×2000 原生像素
 ## 目录结构
 
 ```
-envi-automation/
+envi-automation-skill/
 ├── SKILL.md                        主文档（速查表 + 完整指南 + 决策树）
 ├── README.md                       本文件
 ├── LICENSE                         MIT
 ├── references/
 │   └── troubleshooting.md          错误信息原文对照手册
+├── examples/
+│   ├── README.md
+│   ├── segmentation-example.pro
+│   └── check_environment.py
 └── scripts/
     ├── win_snip.py                 Win+Shift+S 截图模块
     ├── gui_driver.py               窗口查找 / 点击 / 置顶

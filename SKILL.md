@@ -1,6 +1,26 @@
 ---
-name: envi-automation
+name: envi-automation-skill
 description: 自动化操作 ENVI/IDL（5.6 与 6.2）完成遥感影像处理任务——含无界面批处理（stdin 管道调 IDL）、面向对象分割（FXSegmentation）、规则分类、矢量输出，以及 GUI 界面自动截图（Win+Shift+S）。当用户要求"用 ENVI 做某项遥感处理""截 ENVI 界面图""ENVI 脚本不执行""许可报错"时使用。
+summary: Automate ENVI/IDL remote-sensing workflows with tested, step-by-step guidance, IDL pipeline templates, and Windows GUI screenshot automation.
+version: 1.0.0
+tags:
+  - envi
+  - idl
+  - remote-sensing
+  - gis
+  - automation
+keywords:
+  - ENVI
+  - IDL
+  - remote sensing
+  - FXSegmentation
+  - image classification
+use_cases:
+  - Run ENVI/IDL tasks in headless batch mode via stdin
+  - Segment and classify high-resolution imagery with FXSegmentation
+  - Export classification results as shapefiles
+  - Capture ENVI GUI screenshots at native resolution
+docs_url: https://github.com/yusir05999-jackson/envi-automation-skill
 ---
 
 # ENVI / IDL 自动化
@@ -489,3 +509,4 @@ graph TD
 - `scripts/win_snip.py` — 截图模块（可直接 import）
 - `scripts/gui_driver.py` — 窗口查找/点击/前置模块
 - `scripts/example_pipeline.pro` — IDL 分割任务模板
+- `examples/` — 可运行示例：城市不透水面提取的完整流程，见 `examples/README.md`
